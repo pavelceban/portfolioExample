@@ -91,6 +91,7 @@ nav {
 
 .contact-table {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     margin-top: 90px;
     width: 100%;
@@ -137,4 +138,11 @@ main {
 .contact-info.non-bold {
     font-weight: bold;
     color: black;
+}
+
+@media (max-width: 900px) {
+    .contact-table {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
